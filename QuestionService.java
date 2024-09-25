@@ -32,4 +32,19 @@ public class QuestionService {
             System.out.println(s);
         }
     }
+
+    public void printScore(){
+        int score = 0;
+
+        for(int i = 0; i<questions.length; i++){
+            Question question = questions[i];
+            String actualAnswere = question.getAnswere();
+            String userAnswere = selection[i];
+
+            if(actualAnswere.equals(userAnswere)){
+                score++;
+            }
+        }
+        System.out.println("Your score is : " + score);
+    }
 }
