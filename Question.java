@@ -7,48 +7,75 @@ public class Question {
     private String opt4;
     private String answere;
     
+    public Question(int id, String question, String op1, String opt2, String opt3, String opt4, String answere) {
+        this.id = id;
+        this.question = question;
+        this.op1 = op1;
+        this.opt2 = opt2;
+        this.opt3 = opt3;
+        this.opt4 = opt4;
+        this.answere = answere;
+    }
+
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public String getQuestion() {
         return question;
     }
+
     public void setQuestion(String question) {
         this.question = question;
     }
-    public String getOp1() {
+
+    public String getOpt1() {
         return op1;
     }
+
     public void setOp1(String op1) {
         this.op1 = op1;
     }
+
     public String getOpt2() {
         return opt2;
     }
+
     public void setOpt2(String opt2) {
         this.opt2 = opt2;
     }
+
     public String getOpt3() {
         return opt3;
     }
+
     public void setOpt3(String opt3) {
         this.opt3 = opt3;
     }
+
     public String getOpt4() {
         return opt4;
     }
+
     public void setOpt4(String opt4) {
         this.opt4 = opt4;
     }
+
     public String getAnswere() {
         return answere;
     }
+
     public void setAnswere(String answere) {
         this.answere = answere;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Question [id=" + id + ", question=" + question + ", op1=" + op1 + ", opt2=" + opt2 + ", opt3=" + opt3
+                + ", opt4=" + opt4 + ", answere=" + answere + "]";
+    }
 }
